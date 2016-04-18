@@ -1,6 +1,13 @@
 # bing_pic_collection
 必应图片收集脚本
+Windows下桌面背景自动更新脚本
 
-直接运行collect_pics.py，
+2016.04.18: 添加Windows下桌面背景自动更新
+
+1. 当日必应图片收集: 直接运行collect_pics.py，
 当前的必应搜索背景图片将被保存至collection/images文件夹中
 
+2. Windows下桌面背景自动更新:
+- 前台运行: daily_up_windows_background.py
+- 后台运行: daily_up_windows_background.pyw
+- 后台关闭: 任务管理器 -- 结束进程: pythonw
