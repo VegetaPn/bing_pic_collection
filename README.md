@@ -1,5 +1,5 @@
 # bing_pic_collection
-必应图片收集脚本
+必应图片收集脚本  
 Windows下桌面背景自动更新脚本
 
 2016.04.18: 添加Windows下桌面背景自动更新
