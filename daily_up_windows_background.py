@@ -37,10 +37,10 @@ def timer_to_up_background(schedule_time):
 			collect_pics.collect_bing_picure()
 			set_wall_paper_from_jpg(collect_pics.COLLECTION_DIR + nowa_date + '.jpg')
 			print('Windows background changed successful')
+			time.sleep(schedule_time)
 		except Exception as e:
 			print(e)
 			time.sleep(60)
-		time.sleep(schedule_time)
 
 
 if __name__ == '__main__':
