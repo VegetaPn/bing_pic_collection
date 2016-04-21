@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+import os
 import urllib
 import datetime
 
@@ -19,7 +20,11 @@ def collect_bing_picure():
 
 	if pic_url is not None:
 		nowa_time = datetime.datetime.now().strftime('%Y%m%d')
+
+		if not os.path.exists(COLLECTION_DIR):
+			os.mkdir(COLLECTION_DIR)
 		urllib.urlretrieve(pic_url, COLLECTION_DIR + nowa_time + '.jpg')
+
 		print('download successful')
 
 
