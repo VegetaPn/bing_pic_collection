@@ -21,6 +21,8 @@ def collect_bing_picure():
 	elif page_source.find('g_img={url: "') >= 1:
 		pic_url = 'http://cn.bing.com' + page_source.split('g_img={url: "')[1].split('"')[0]
 		print(pic_url)
+	else:
+		raise Exception('当前版本已过时，请升级版本或与开发者联系: https://github.com/VegetaPn/bing_pic_collection')
 
 	if pic_url is not None:
 		nowa_time = datetime.datetime.now().strftime('%Y%m%d')
